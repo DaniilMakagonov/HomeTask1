@@ -7,6 +7,6 @@ data class Film(
     private val sessions: MutableList<Session> = mutableListOf()
 ) {
     fun name() = name
-    fun description() = description
     fun setDescription(newDescription: String) = run { description = newDescription }
+    fun addSession(session: Session) = run { sessions.add(session) }
 }
